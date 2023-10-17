@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" type="image/png" href="/logo.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@100&family=Playfair+Display&family=Pridi&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Spiko Bank</title>
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="logo.png" alt="" />
+      <p class="login-text">Log in to get started</p>
+      <form class="login">
+        <input
+          class="login-input user-login-input"
+          placeholder="USER"
+          type="text"
+        />
+        <input
+          class="login-input pin-login-input"
+          placeholder="PIN"
+          type="text"
+          maxlength="4"
+        />
+        <button class="login__btn">&rarr;</button>
+      </form>
+    </header>
+
+    <div class="app__panel">
+      <div class="information__panel">
+        <div class="current__balance--date">
+          <p>Current Balance</p>
+          <p class="current__date">08/22/2023</p>
+        </div>
+        <div class="total__balance">
+          <p class="total__money">0000€</p>
+        </div>
+      </div>
+
+      <!-- user movements -->
+      <div class="movements">
+        <!-- <div class="balance__info">
+          <div class="balance--signs">
+            <p class="dep__with">1 Deposit</p>
+            <span> <p>3 Days Ago</p></span>
+          </div>
+          <div class="movement__money">400$</div>
+        </div>
+        <div class="balance__info">
+          <div class="balance--signs">
+            <p class="dep__with">1 Deposit</p>
+            <span> <p>3 Days Ago</p></span>
+          </div>
+          <div class="movement__money">400$</div>
+        </div> -->
+      </div>
+
+      <div class="transfer__money">
+        <h4>Transfer Money</h4>
+        <form class="transfer">
+          <input
+            class="transfer__input transfer__to"
+            placeholder="Transfer To"
+            type="text"
+          />
+          <input
+            class="transfer__input transfer__amount"
+            placeholder="Amount"
+            type="text"
+          />
+          <button class="transfer__btn">&rarr;</button>
+        </form>
+      </div>
+
+      <div class="request__loan">
+        <h4>Request Loan</h4>
+        <form class="transfer">
+          <input
+            class="loan__input transfer__amount"
+            placeholder="Amount"
+            type="text"
+          />
+          <button class="transfer__btn">&rarr;</button>
+        </form>
+      </div>
+
+      <div class="close__acc">
+        <h4>Delete Account</h4>
+        <form class="transfer">
+          <input
+            class="close_acc__input"
+            placeholder="Account Name"
+            type="text"
+          />
+          <input
+            class="close_acc__input"
+            placeholder="Account PIN"
+            type="text"
+          />
+          <button class="transfer__btn">&rarr;</button>
+        </form>
+      </div>
+
+      <div class="sort__container">
+        <button class="sort">Sort</button>
+        <span>&darr;</span>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

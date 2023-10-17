@@ -1,0 +1,287 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  padding: 2rem;
+  font-family: "Inter", sans-serif;
+  background-color: #f3f3f3;
+  height: 100vh;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 6rem;
+}
+
+.login-text {
+  font-size: 1.8rem;
+
+  font-weight: bolder;
+}
+.login-input {
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  letter-spacing: 0.15rem;
+  padding: 1rem;
+  border-radius: 2rem;
+  width: 15rem;
+  margin-right: 1rem;
+  text-align: center;
+  border-color: transparent;
+  outline: none;
+}
+.login__btn {
+  outline: none;
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.app__panel {
+  row-gap: 1rem;
+  position: relative;
+  font-size: 2rem;
+  max-width: 100rem;
+  margin: 15rem auto;
+  grid-template-columns: 4fr 3fr;
+  grid-template-rows: auto repeat(3, 15rem) auto;
+  opacity: 0.1;
+  display: none;
+  transition: all 0.8s;
+}
+
+.information__panel {
+  display: flex;
+  justify-content: space-between;
+  background-image: linear-gradient(to top left, #ffb003, #ffcb03);
+  grid-column: 1 / span 2;
+  padding: 2rem;
+  align-items: center;
+  border-radius: 1rem;
+}
+.current__balance--date {
+  color: rgb(2, 2, 2);
+  font-weight: bolder;
+}
+
+.movements {
+  grid-row: 2/5;
+  overflow: scroll;
+}
+.total__money {
+  font-size: 3rem;
+  color: white;
+  font-family: "Inter", sans-serif;
+}
+.total__balance {
+  margin-left: auto;
+}
+.current__balance--date > p {
+  font-family: "Pridi", serif;
+}
+
+.current__date {
+  color: #37b9b4fc;
+}
+.movement__money {
+  color: whitesmoke;
+}
+/* Movements Code: */
+.movements {
+  background-image: linear-gradient(to top left, #e4d3c9, #20a5da);
+}
+.balance__info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 2rem;
+  border-bottom: 1px solid rgb(192, 182, 182);
+}
+.balance--signs {
+  display: flex;
+  font-size: 1.5rem;
+  color: #b6aeae;
+  align-items: center;
+  font-family: "Pridi", serif;
+}
+.balance--signs span {
+  margin-left: 2rem;
+}
+.deposit__sign {
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+  border-radius: 35rem;
+  padding: 0.7rem 1.7rem;
+  align-items: center;
+  font-family: "Pridi", serif;
+  color: aliceblue;
+}
+.withdraw__sign {
+  background-image: linear-gradient(to top left, #ca242c, #e15d5d);
+  border-radius: 35rem;
+  padding: 0.7rem 1.7rem;
+  align-items: center;
+  font-family: "Pridi", serif;
+  color: aliceblue;
+}
+.movement__money {
+  font-family: "Pridi", serif;
+}
+
+/* Transfer Money: */
+.transfer__money h4 {
+  font-family: "Pridi", serif;
+  padding: 2.5rem 4rem;
+}
+.transfer__money {
+  background-color: #3b64c382;
+  border-radius: 1rem;
+  align-items: center;
+}
+
+.transfer__input {
+  outline: none;
+  border-radius: 15rem;
+  background-color: rgb(235, 217, 192);
+  padding: 1rem 1rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 13rem;
+}
+.transfer {
+  padding: 0rem 4rem;
+  font-weight: bolder;
+}
+.transfer__btn {
+  border: none;
+  padding: 0.3rem 2rem;
+  font-size: 2.2rem;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.transfer__input::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Pridi", serif;
+}
+
+/* Request Loan: */
+/* Transfer Money: */
+.request__loan h4 {
+  font-family: "Pridi", serif;
+  padding: 2.5rem 4rem;
+}
+.request__loan {
+  border-radius: 1rem;
+  align-items: center;
+  row-gap: 2rem;
+  background-image: linear-gradient(to top left, #39b385, #9be15d);
+}
+
+.loan__input {
+  outline: none;
+  border-radius: 15rem;
+  padding: 1rem 1rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 13rem;
+  color: white;
+}
+.transfer {
+  padding: 0rem 4rem;
+  font-weight: bolder;
+}
+.transfer__btn {
+  border: none;
+  padding: 0.3rem 2rem;
+  font-size: 2.2rem;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.loan__input::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Pridi", serif;
+}
+
+/* Close Account: */
+.close__acc h4 {
+  font-family: "Pridi", serif;
+  padding: 2.5rem 4rem;
+}
+.close__acc {
+  border-radius: 1rem;
+  align-items: center;
+  row-gap: 2rem;
+  background-image: linear-gradient(to top left, #c07575, #e15d5d);
+}
+
+.close_acc__input {
+  outline: none;
+  border-radius: 15rem;
+  padding: 1rem 1rem;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.4);
+  width: 13rem;
+  color: white;
+}
+.transfer {
+  padding: 0rem 4rem;
+  font-weight: bolder;
+}
+.transfer__btn {
+  border: none;
+  padding: 0.3rem 2rem;
+  font-size: 2.2rem;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+.close_acc__input::placeholder {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  font-family: "Pridi", serif;
+}
+.sort__container {
+  padding: 1rem;
+  background-color: #39b385;
+  display: flex;
+  color: #ffffff;
+  font-size: 1.8rem;
+  justify-content: center;
+  align-items: center;
+  vertical-align: middle;
+  font-weight: bold;
+  cursor: pointer;
+}
+.sort {
+  border: none;
+  font-size: 1.8rem;
+  background-color: #39b385;
+  color: white;
+  cursor: pointer;
+}
+.sort__container span {
+  margin-left: 0.5rem;
+}
+/* .sort__container:hover .span {
+  background-color: #ca5324;
+} */
